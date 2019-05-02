@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-
-
 export default class MusicPlayer extends Component{
     constructor(props){
         super(props);
@@ -81,41 +79,36 @@ export default class MusicPlayer extends Component{
 			}
 		}
 	}
-
-   
     render(){
-        
         return (
 			<div  className="mainpage ">
             <h1 className="heading">Seacrh for your Favourite Artist</h1>
-        
-                <div className="">
-				  <div className="">
+                <div>
+				  <div>
 						<div className="search">
                            <input type="text" className="form-control" className="form-control text-center" placeholder="Enter Any Artist to search box" required onChange={event => this.setState({ query: event.target.value })} onKeyPress={event => { if (event.key === 'Enter') this.search() } } />
                            <button class="exit" type="reset"></button>
 						</div>
 					</div>
 				</div>
-				<div className="row ">
-					<div className="">
+				<div className="row">
+					<div>
 					</div>
 					<div>
-						<div className="">
+						<div>
 							<img className="img-responsive" src={this.state.profilepic} alt='' />
                             
 						</div>
 						<div >
-							<h3 className="">{this.state.artist}</h3>
-							<span className="">listeners:{this.state.listeners}</span>
+							<h3>{this.state.artist}</h3>
+							<span>listeners:{this.state.listeners}</span>
                             <hr></hr>
-							<span className="">playcount:{this.state.playcount}</span>  
+							<span>playcount:{this.state.playcount}</span>  
 						</div>
 					</div>
 				</div>
-
-				<div className="">
-					<div className="">
+				<div>
+					<div>
 					</div>
 					<div className="tracklist wrapper">
 						<ul className="tracks">
