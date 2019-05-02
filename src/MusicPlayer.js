@@ -105,7 +105,7 @@ export default class MusicPlayer extends Component{
 							<img className="img-responsive" src={this.state.profilepic} alt='' />
                             
 						</div>
-						<div className="">
+						<div >
 							<h3 className="">{this.state.artist}</h3>
 							<span className="">listeners:{this.state.listeners}</span>
                             <hr></hr>
